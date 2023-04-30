@@ -1,0 +1,170 @@
+body{
+    background-image: linear-gradient(to right, #242b645b, #242b6451)
+}
+
+
+
+    #SearchBar2{
+        width: 300px;
+        font-size: 20px;
+    }
+
+#List li{
+    font-size: 25px;
+    margin-right: 60px;
+    padding-top: -20px;
+}
+.dropdown-item{
+    color: red;
+}
+.listing{
+    color: red;
+}
+.nav-item a{
+    color: rgb(255, 244, 244);
+  
+}
+.nav-item a:hover{
+    color: rgba(236, 9, 66, 0.649)
+}
+.navbar-expand-lg a:focus{
+    color: rgba(236, 9, 66, 0.649);
+}
+#logo{
+    opacity: 0.7;
+}
+
+
+::placeholder{
+    font-size: 17.7px;
+    text-align:center;
+}
+
+
+
+
+#Login:hover{
+    color: rgb(233, 22, 74);
+}
+
+form input{
+    
+    width: 500px;
+    
+}
+
+
+
+#collection{
+    position: relative;
+    top: 350px;
+    display: block;
+    justify-content: start;
+}
+
+.card{
+    border: none;
+}
+
+
+
+#Form{
+    margin-top: 140px;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    color: red;
+}
+
+
+
+
+.navbar-toggler{
+    border-color: white;
+}
+
+#Peakrankings{
+    border: 1px solid black;
+    background-color: black;
+    color: red;
+    width: max-content;
+    padding: 32px;
+}
+
+#first, #second{
+    list-style: none ;
+    display: flex;
+    justify-content:center;
+    margin: 1px;
+}
+
+
+#Platform{
+    height: 45px;
+    margin-top: 1.5px;
+    border-radius: 3px;
+    width: 58px;
+}
+
+
+
+#CrossServers{
+    border: 1px solid  #0C090A;
+    padding: 25px;
+    width: max-content;
+    margin: 20px;
+    background-color: #0C090A;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+   
+}
+
+.button1{
+    height: 47px;
+    width: 58px;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+
+
+#CrossServers > h2{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+}
+
+
+#footer{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 9px;
+    text-align:center;
+}
+
+#status{
+    color:rgb(233, 22, 74)
+}
+
+#status:hover{
+    color: rgb(154, 18, 18);
+}
+
+#status:focus{
+    color: rgb(52, 52, 181);
+}
+
+.SearchBar2{
+    width: 300px;
+    font-size: 20px;
+}
+
+.button1{
+    height: 47px;
+    width: 58px;
+    margin-top: 0px;
+    border-radius: 4px;
+}

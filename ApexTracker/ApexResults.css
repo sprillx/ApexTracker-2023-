@@ -1,0 +1,96 @@
+body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+        
+}
+    .SearchBar2{
+        width: 300px;
+        font-size: 20px;
+    }
+
+
+    
+
+#List li{
+    font-size: 25px;
+    margin-right: 60px;
+    padding-top: -20px;
+}
+.dropdown-item{
+    color: red;
+}
+.listing{
+    color: red;
+}
+.nav-item a{
+    color: rgb(255, 244, 244);
+  
+}
+.nav-item a:hover{
+    color: rgba(236, 9, 66, 0.649)
+}
+.navbar-expand-lg a:focus{
+    color: rgba(236, 9, 66, 0.649);
+}
+.navbar-toggler{
+    border-color: white;
+}
+
+
+
+
+#firstBadges{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00000039;
+    border: 1px solid #000000;
+    border-width: max-content;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.951);
+    list-style: none;
+    font-family: 'Didact Gothic', sans-serif;
+    border-radius: 3px;
+    height: max-content;
+}
+
+#userName{
+    color: rgba(0, 0, 0, 0.978);
+    font-family: 'Noto Sans Georgian', sans-serif;
+    text-align:center;
+    font-size: 60px
+}
+
+#masthead{
+    background-size: cover;
+    min-height: 100vh;
+    background-position: relative;
+    
+    
+}
+
+
+
+.button1{
+    height: 47px;
+    width: 58px;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+#List li{
+    font-size: 25px;
+    margin-right: 60px;
+    padding-top: -20px;
+}
+
+#level{
+    font-size: 67px;
+}
+
+
+#masthead{
+   
+}

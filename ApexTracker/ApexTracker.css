@@ -1,0 +1,138 @@
+body{
+   
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+.masthead{
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+
+    #SearchBar2{
+        width: 300px;
+        font-size: 20px;
+    }
+
+#List li{
+    font-size: 25px;
+    margin-right: 60px;
+    padding-top: -20px;
+}
+.dropdown-item{
+    color: red;
+}
+.listing{
+    color: red;
+}
+.nav-item a{
+    color: rgb(255, 244, 244);
+  
+}
+.nav-item a:hover{
+    color: rgba(236, 9, 66, 0.649)
+}
+.navbar-expand-lg a:focus{
+    color: rgba(236, 9, 66, 0.649);
+}
+#logo{
+    opacity: 0.7;
+}
+
+
+::placeholder{
+    font-size: 17.7px;
+    text-align:center;
+}
+
+
+
+
+form input{
+    
+    width: 500px;
+    
+}
+
+
+
+#collection{
+    position: relative;
+    top: 350px;
+    display: block;
+    justify-content: start;
+}
+
+.card{
+    border: none;
+}
+
+#SearchBar{
+    width: 300px;
+    height: 50px;
+}
+
+#Form{
+    margin-top: 140px;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    color: red;
+}
+
+
+img{
+    width: 600px;
+    height: auto;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar-toggler{
+    border-color: white;
+}
+
+#Peakrankings{
+    border: 1px solid black;
+    background-color: black;
+    color: red;
+    width: max-content;
+    padding: 32px;
+}
+
+#first, #second{
+    list-style: none ;
+    display: flex;
+    justify-content:center;
+    margin: 1px;
+}
+
+
+.Platform{
+    height: 47px;
+    margin-top: 1.5px;
+    border-radius: 2px;
+    width: 56px;
+    margin-left: 0px;
+}
+.button1{
+    height: 47px;
+    width: 58px;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+
+#myForm{
+    margin-top: 140px;
+}
