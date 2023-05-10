@@ -88,15 +88,11 @@ form input{
     color: red;
 }
 
-
-img{
-    width: 600px;
-    height: auto;
-    margin: auto;
-    display: block;
-    justify-content: center;
-    margin-top: 10px;
+.nav-link{
+    margin: 10px;
 }
+
+
 
 .navbar-toggler{
     border-color: white;
@@ -136,3 +132,8 @@ img{
 #myForm{
     margin-top: 140px;
 }
+
+input:invalid:required{
+    border: 1px solid rgb(181, 66, 66);
+}
+

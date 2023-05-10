@@ -1,0 +1,76 @@
+body{
+    overflow-x: hidden;
+    
+}
+
+
+#currentMap{
+    width: 1300px;
+    height: 390px;
+    border: 1px solid white
+}
+
+#nextMap{
+    width: 1300px;
+    height: 390px;
+    border: 1px solid white
+}
+.nav-link{
+    margin: 10px;
+}
+
+#List li{
+    font-size: 25px;
+    margin-right: 60px;
+    padding-top: -20px;
+}
+.dropdown-item{
+    color: red;
+}
+.listing{
+    color: red;
+}
+.nav-item a{
+    color: rgb(255, 244, 244);
+  
+}
+.nav-item a:hover{
+    color: rgba(236, 9, 66, 0.649)
+}
+.navbar-expand-lg a:focus{
+    color: rgba(236, 9, 66, 0.649);
+}
+#logo{
+    opacity: 0.7;
+}
+
+.SearchBar2{
+    width: 290px;
+    font-size: 20px;
+}
+
+#searchButton{
+    height: auto;
+    text-align:center;
+    width: 60px;
+    font-size: 15px;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+::placeholder{
+    text-align:center;
+    font-size: 17.7px;
+}
+
+h2{
+    color:  white;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+h1{
+    color: rgba(255, 252, 252, 0.978);
+   font-family: 'Roboto Slab', serif;
+   
+}
+

@@ -1,13 +1,14 @@
 body{
-    background-image: linear-gradient(to right, #242b645b, #242b6451)
+    background-color: black;
+    
 }
 
 
 
-    #SearchBar2{
-        width: 300px;
-        font-size: 20px;
-    }
+   
+.nav-link{
+    margin: 10px;
+} 
 
 #List li{
     font-size: 25px;
@@ -62,9 +63,7 @@ form input{
     justify-content: start;
 }
 
-.card{
-    border: none;
-}
+
 
 
 
@@ -112,9 +111,9 @@ form input{
 
 
 #CrossServers{
-    border: 1px solid  #0C090A;
-    padding: 25px;
-    width: max-content;
+    border: 1px solid  #ffffff;
+    padding: 20px;
+    width:  400px;
     margin: 20px;
     background-color: #0C090A;
     color: rgb(255, 255, 255);
@@ -158,13 +157,26 @@ form input{
 }
 
 .SearchBar2{
-    width: 300px;
+    width: 290px;
     font-size: 20px;
 }
 
-.button1{
-    height: 47px;
-    width: 58px;
+
+#searchButton{
+    height: auto;
+    text-align:center;
+    width: 60px;
+    font-size: 15px;
     margin-top: 0px;
     border-radius: 4px;
+}
+
+#CrossServers > li{
+    text-align:center;
+}
+
+#masthead{
+    background-position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

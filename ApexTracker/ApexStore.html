@@ -8,47 +8,76 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=IBM+Plex+Serif:wght@200&family=Nunito+Sans:ital,wght@1,200&family=Roboto:wght@300&family=Uchen&display=swap" rel="stylesheet">
         <style>
-            body{
-                overflow-x: hidden;
-            }
-            ul{
-                list-style: none;
-                margin-top: 40px;
-                width: fit-content;
-            }
-                p{
-                    font-size: 30px;
-                }
-            #Bundle1{
-                display: flex;
-                justify-content: space-around;
-            }
-            img{
-                width: 355px;
-                height: 500px;
-            }
+         [data-tab-content ]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.tabs{
+    padding: 34px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+     border-bottom: 1px solid black;
+}
+
+
+
+.tabs{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active{
+    color: rgb(78, 176, 122);
+}
+
+
+.tab:hover{
+    color: red;
+}
+
+.outershell{
+    border: 1px solid black;
+    width: max-content;
+    padding: 45px;
+
+}
+
+.tab{
+    margin: 35px;
+}
         </style>
     </head>
-    <body onload="getStore()">
-
+    <body>
+    
+        <div class="outershell">
+            <ul class="tabs">
+                <li data-tab-target="#home" class=" active tab"> home </li>
+                <li  data-tab-target="#pricing" class="tab"> home </li>
+                <li  data-tab-target="#about" class="tab"> about </li>
+            </ul>
+          <div class="tab-content">
+              <div id="home" data-tab-content class="active">
+                  <h1> Home </h1>
+                  <p> hi this is a  test </p>
+              </div>
+              <div id="pricing" data-tab-content>
+                  <h1> about </h1>
+                  <p> see if it works </p>
+              </div>
+              <div id="about" data-tab-content>
+                  <h1> home </h1>
+                  <p> see if it works </p>
+              </div>
+          </div>
+        </div>
         
       
-
-        <div id="Bundle1">
-            <ul> 
-                <li id="Icon"> </li>
-                <li><p id="Title"> </p></li>
-            </ul>
-            <ul>
-                <li id="Icon2"> </li>
-                <li><p id="Title2"> </p></li>
-            </ul>
-            <ul>
-                <li id="Icon3"> </li>
-                <li><p id="Title3"> </p></li>
-            </ul>
-            
-        </div>
-    <script src="ApexStore.js"></script>
+        
+    <script src="tabs.js" defer> </script>
     </body>
 </html>

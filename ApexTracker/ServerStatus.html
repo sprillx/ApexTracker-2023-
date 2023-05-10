@@ -26,7 +26,7 @@
     <body onload="serverStatus()">
 
 
-      
+ <div id="masthead" style="background-image: url('https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80')">  
         <div class="container-fluid" style="background-color: #101010;
         background-image: linear-gradient(315deg, #141617 0%, #000000 74%);">
             <div class="row">
@@ -45,9 +45,12 @@
                               <li class="nav-item">
                                 <a class="nav-link" id="leaderboard" aria-current="page" href="#"> Server status </a>
                               </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="leaderboard" aria-current="page" href="MapRotation.html"> Map rotation </a>
+                              </li>
                             </ul>
                             <form class=" d-flex flex-nowrap"" role="search">
-                                <input class="SearchBar2" id="SearchBar" class="form-control-sm me-0" type="search" placeholder="Enter Apex UserName" aria-label="Search">
+                                <input class="SearchBar2" id="SearchBar" class="form-control-sm me-0" type="search" placeholder="Enter Apex UserName" aria-label="Search" minlength="3" maxlength="16" required >
                                 <label for="Platform"> </label>
 
                                 <select name="Platform2" id="Platform2">
@@ -74,10 +77,10 @@
     <div class="container  mt-5">
         <div class="row">
               <div class="col-md-4" id="CrossServers">
-                  <h2> Crossplay auth(any platform)</h2>
+                  <h2 class="text-center"> Crossplay auth(any platform)</h2>
                   <hr>
                   <ul style="list-style: none">
-                    <li id="StatusAsia"> </li>
+                    <li  id="StatusAsia" > </li>
                     <li id="StatusEUEAST">  </li>
                     <li id="StatusEUWest">  </li>
                     <li id="StatusUSE"> </li>
@@ -87,7 +90,7 @@
                   </ul>
               </div>
             <div class="col-md-4" id="CrossServers">
-                  <h2> Origin Logins </h2>
+                  <h2 class="text-center"> Origin Logins </h2>
                   <hr>
                  <ul style="list-style: none" >
                   <li id="StatusOLAsia">  </li>
@@ -100,7 +103,7 @@
                  </ul>
             </div>
             <div class="col-md-4" id="CrossServers"> 
-                <h2> EA Accounts</h2>
+                <h2 class="text-center"> EA Accounts</h2>
                 <hr> 
               <ul style="list-style: none">
                   <li id="EAasia">  </li>
@@ -114,7 +117,7 @@
 
             </div>
             <div class="col-md-3" id="CrossServers">
-                    <h2> Console Servers </h2>
+                    <h2 class="text-center"> Console Servers </h2>
                     <hr>
                     <ul>
                   <ul style="list-style: none">
@@ -133,7 +136,8 @@
                 </footer>
             </div>
         </div>
-    </div>
+     </div>
+</div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">

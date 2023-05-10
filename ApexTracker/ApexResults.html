@@ -19,17 +19,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@500&family=Didact+Gothic&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+Georgian:wght@300&family=Poppins:ital,wght@0,200;0,300;1,100&family=Raleway:wght@300&family=Sarabun:ital,wght@1,200&family=Source+Sans+Pro:wght@600&family=Tajawal&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@500&family=Didact+Gothic&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+Georgian:wght@300&family=Poppins:ital,wght@0,200;0,300;1,100&family=Raleway:wght@300&family=Sarabun:ital,wght@1,200&family=Source+Sans+Pro:wght@600&family=Tajawal&family=Zilla+Slab&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@500&family=Didact+Gothic&family=Montserrat&family=Nanum+Gothic&family=Poppins:ital,wght@0,200;0,300;1,100&family=Raleway:wght@300&family=Sarabun:ital,wght@1,200&family=Source+Sans+Pro:wght@600&family=Tajawal&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@500&family=Montserrat&family=Nanum+Gothic&family=Poppins:ital,wght@0,200;0,300;1,100&family=Raleway:wght@300&family=Sarabun:ital,wght@1,200&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">        
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@500&family=Didact+Gothic&family=Montserrat&family=Nanum+Gothic&family=Poppins:ital,wght@0,200;0,300;1,100&family=Raleway:wght@300&family=Sarabun:ital,wght@1,200&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+        <style>
+          
+          span > h1{
+           
+            margin: auto;
+            display: block;
+            justify-content: center;
+          }
+        </style>
     </head>
-    <body>
+    <body  style="background-image: linear-gradient(to right, black, black)"
 
     
                           
-      <div id="masthead">
+<div id="masthead">
         <div class="container-fluid" style="background-color: #101010;
         background-image: linear-gradient(315deg, #141617 0%, #000000 74%);">
             <div class="row">
@@ -48,8 +58,11 @@
                               <li class="nav-item">
                                 <a class="nav-link" id="leaderboard" aria-current="page" href="ServerStatus.html"> Server status </a>
                               </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="leaderboard" aria-current="page" href="MapRotation.html"> Map rotation </a>
+                              </li>
                             </ul>
-                            <form class=" d-flex flex-nowrap"" role="search">
+                            <form class=" d-flex flex-nowrap" role="search">
                                 <input class="SearchBar2" id="SearchBar" class="form-control-sm me-0" type="search" placeholder="Enter Apex UserName" aria-label="Search">
                                 <label for="Platform"> </label>
 
@@ -58,7 +71,7 @@
                                   <option value="PS4"> PS4</option>
                                   <option value="XBOX"> XBOX </option>
                                 </select>
-                              <button class="btn btn-lg btn-outline-danger" class="button1" id="searchButton" style="background-color: rgb(0, 0, 0); color: white" onclick="testingData()"> enter </button>
+                              <button class="btn btn-lg btn-outline-danger"  id="searchButton" style="background-color: rgb(0, 0, 0); color: white" onclick="testingData()"> enter </button>
                             </form>
                           </div>
                         </div>
@@ -69,10 +82,14 @@
                 </div>
             </div>
         </div>
-
+        
+          
+        <span>
           <h1  class="text-center mt-5" id="userName">  </h1>
-
-            <hr style="color:white"> 
+        </span>
+          <hr style="color:white"> 
+        
+        
     
       
       <div class="container-fluid">
@@ -93,13 +110,44 @@
                   </li>
                 </ul>
             </div>
+          <div class="col-md-8 col-sm-6 col-xs-6">
+            <div class="outershell">
+                <ul class="tabs">
+                  <li data-tab-target="#overview" class="tab active" style="padding:25px;font-size:25px">Overview</li>
+                 
+                  <li data-tab-target="#MatchHistory" class="tab"  style="padding:25px;font-size:25px">Match History</li>
+                  
+                  <li data-tab-target="#Progression" class="tab"  style="padding:25px;font-size:25px"> Progression </li>
+
+                </ul>
+              <div class="tab-content">
+                  <div id="overview" data-tab-content class="active" >
+                        <h1 class="text-center"> Last Selected </h1>     
+                      <img id="legends" class="img-fluid" src=" "  alt="lastLegend" style="height: 21vh;">
+                    
+                        <p id="lastSelected" class="text-center"> </p> 
+
+                        <h1 class="text-center"> BR DAMAGE </h1>
+                        <h2 id="damage"> </h2>
+                  </div>
+                  <div class="tab-content" id="MatchHistory" data-tab-content>  
+                      <h3 class="text-center">  This data is not available currently </h3>
+                  </div>
+                  <div class="tab-content" id="Progression" data-tab-content>
+                        <h3 class="text-center"> This data is not available currently </h3>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-    </div>
-
-
-
-
+    
+    
+    
+    
+    
+</div>
+        <script src="tabs.js" defer> </script>
         <script src="apexTracker.js"> </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -113,17 +161,40 @@
           const level = urlParams.get('Level');
           const legendIcon = urlParams.get('legendIcon');
           const arena = urlParams.get('arena')
+          const lastSelected = urlParams.get('lastSelected')
+          const SkinINFO  = urlParams.get('skinINFO');
+          const pose = urlParams.get('pose');
+          const skin = urlParams.get('skin');
+          const frameBanner = urlParams.get('frameBanner');
+          const Intro = urlParams.get('Intro')
+          const damage = urlParams.get('damageVAL')
 
           console.log(rank);
           console.log(div)
           console.log(legendIcon);
           console.log(arena)
+          
+          console.log(skin);
+          console.log(pose);
+          console.log(frameBanner);
           document.getElementById('userName').innerHTML = name;
           
-         
+        
+          document.getElementById('legends').src = lastSelected;
+          
 
-          document.body.style.backgroundImage = `url(${legendIcon})`;
-         
+           document.getElementById('lastSelected').innerHTML = 'Skin: '+skin+"  | Frame : "+frameBanner+" |  Pose : "+pose+" |  Intro : "+Intro
+           document.getElementById('damage').innerHTML = damage
+
+          //document.body.style.backgroundImage = `url(${legendIcon})`;
+
+          const mastheadDiv = document.getElementById('masthead');
+           mastheadDiv.style.backgroundImage = `url(${legendIcon})`;
+            
+    
+          
+
+          console.log(masthead)
 
           document.getElementById('brRank').src = rank;
           document.getElementById('level').innerHTML = level;

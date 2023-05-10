@@ -36,7 +36,19 @@ function testingData(event) {
       const Rank = data.global.rank.rankScore;
       const rankDiv = data.global.rank.rankDiv;
       const legendIcon = data.legends.selected.ImgAssets.banner
-  
+      const lastSelected = data.legends.selected.ImgAssets.icon
+      const skin = data.legends.selected.gameInfo['skin'];
+      const frameBanner = data.legends.selected.gameInfo['frame'];
+      const pose = data.legends.selected.gameInfo['pose'];
+      const  frameRare = data.legends.selected.gameInfo['frameRarity'];
+      const skinRar = data.legends.selected.gameInfo['skinRarity'];
+      const IntroCharacter = data.legends.selected.gameInfo['intro'];
+       const total = data.total.damage.name
+        const damage = data.total.damage.value
+    
+
+
+
       let rankURl = document.createElement('img');
       rankURl.src = RankTier;
       rankURl.style.width = '40px'
@@ -45,13 +57,15 @@ function testingData(event) {
   
       let legendIconURL = document.createElement('img');
       legendIconURL.src = legendIcon;
-      legendIconURL.style.width = '100px'
-      legendIconURL.style.height = '300px'
+  
 
 
       let arenaURL = document.createElement('img');
       arenaURL.src = arenaIMG;
 
+
+      let lastSelectedURL = document.createElement('img');
+      lastSelectedURL.src = lastSelected;
   
       console.log(legendIconURL);
       console.log(data);
@@ -59,7 +73,7 @@ function testingData(event) {
       console.log(RankTier);
       console.log(rankDiv);
       console.log(RankName);
-  
+      
       console.log(Platform2);
 
       
@@ -69,7 +83,15 @@ function testingData(event) {
         name: name,
         Level: Leveling,
         legendIcon: legendIconURL.src,
-        arena: arenaURL.src
+        arena: arenaURL.src,
+        lastSelected: lastSelectedURL.src,
+        skin: skin,
+        frameBanner: frameBanner,
+        pose: pose,
+        Intro: IntroCharacter,
+        brNAME: total,
+        damageVAL: damage
+
       });
       window.location.href = `ApexResults.html?${queryParams.toString()}`;
     })
@@ -82,7 +104,9 @@ function testingData(event) {
 function getData(){
 
   const searchBar = document.getElementById('searchbar').value;
- 
+  const input = document.querySelector('input').value;
+
+            
   fetch(`https://api.mozambiquehe.re/bridge?auth=9dd3dc2c00b2f3d971c3697ca775ba71&player=${searchBar}&platform=${PlatFormVal2}`)
   .then(response => response.json())
   .then(data => {
